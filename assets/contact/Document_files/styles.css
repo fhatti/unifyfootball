@@ -1,0 +1,76 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+  
+}
+
+
+video{
+    position:absolute;
+    top:0;
+}
+
+/* NAVBAR*/
+.header
+{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+
+
+.logo
+{
+    margin-top:-10px;
+}
+
+.navbar-container a
+{
+     font-size: 18px;
+     font-weight: 500;
+     color:#2A9B59;
+     text-decoration: none;
+    margin-left: 40px;
+    position:relative;
+    letter-spacing: 0.5px;
+    padding:0 10px;
+}
+
+.navbar-container a::after
+{
+    content:"";
+    position: absolute;
+    background-color: #2A9B59;
+    height: 2.5px;
+    width:0;
+    left:6px;
+    bottom:-8px;
+    transition: 0.8s;
+    
+  
+}
+
+.navbar-container a:hover::after{
+width: 90%;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        vertical-align: middle;
+}
+
