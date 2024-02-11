@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700;800;900&display=swap");
+
+.icon {
+  color: #c0c0c0;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.5em;
+  margin-top: 0.2em;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: #37383c;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container-l {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-container-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  width: 80%;
+}
+
+.footer-links {
+  width: 20%;
+}
+
+.footer-us {
+  width: 50%;
+  padding: 1em;
+  margin-left: 5em;
+  min-width: 170px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 0.2em;
+  margin-left: 2em;
+  width: 100%;
+  min-width: 100px;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.icon:hover:not(.icon-location, .copyright),
+.icon:focus {
+  color: #2a9b59;
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+.footer-social {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.footer-adress {
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 0.5em;
+  max-width: 170px;
+}
+
+.icon-location {
+  padding: 0.2em;
+  margin-right: 0.3em;
+  color: #fff;
+}
+
+.logo-txt {
+  width: 220px;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  margin-bottom: 2em;
+  font-weight: 900;
+}
+
+/* RESPONSIVE */
+@media (min-width: 1025px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px;
+  }
+
+  .footer-container {
+    margin-top: 1em;
+  }
+
+  .footer-container-l {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 3em;
+    max-height: 100px;
+    max-width: 500px;
+  }
+
+  .footer-container-item {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-link {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-link,
+  .copyright {
+    font-weight: 400;
+    color: #c0c0c0;
+  }
+
+  .footer-us {
+    width: 100%;
+  }
+
+  .social-media {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .footer-social {
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 200px;
+    margin-left: 0.3em;
+  }
+
+  .footer-social-icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin-left: 0.5em;
+  }
+
+  .footer-social-icons .icon {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .footer-adress {
+    display: none;
+  }
+
+  .footer-container-r {
+    display: flex;
+    justify-content: space-around;
+    max-height: 200px;
+    margin-right: 5em;
+  }
+
+  .logo-txt {
+    width: 100%;
+    max-width: 700px;
+  }
+}
