@@ -1,0 +1,123 @@
+.standings {
+  font-size: 18px;
+  background-color: #f8f9fa;
+  font-family: "League Spartan", sans-serif;
+}
+
+.standings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.standings-container-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.standings-container-header,
+.widget-header {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #2a9b59;
+  font-weight: 700;
+  padding: 1em 0;
+  margin-left: 0.2em;
+}
+
+.standing-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-legend {
+  width: 100%;
+  text-align: start;
+}
+
+.table-legend-info {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.2em;
+  width: 100%;
+}
+
+.table-legend-info:last-of-type {
+  margin-bottom: 0;
+}
+
+.legend-icon {
+  vertical-align: middle;
+  margin-right: 0.3em;
+  width: 10px;
+}
+
+.article-container {
+  margin-top: 10em;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+  .standings-container {
+    margin: 1.5em 0;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .standings-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .widget-header {
+    text-align: center;
+  }
+
+  .img-wrapper
+  {
+    margin-top:1em;
+  }
+   
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */

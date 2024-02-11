@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,700;8..144,900&display=swap");
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+}
+.active {
+  color: #fff !important;
+  background-color: #2a9b59;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  background-color: #37383c;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+
+  /* box-shadow: 5px 8px 15px 5px #2a9b59; */
+}
+
+.burger-menu {
+  position: absolute;
+  top: 3.8em;
+  right: 1.5em;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25em;
+  height: 1.4em;
+  display: flex;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  height: 0.15em;
+  width: 100%;
+  background-color: #ffff;
+  display: flex;
+  border-radius: 0.2rem;
+  transition: 0.4s;
+}
+
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.open {
+  display: flex;
+}
+
+.logo {
+  width: 150px;
+  padding: 1em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.2em;
+  display: none;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
+}
+
+ul.open {
+  animation-name: slideInOut;
+}
+
+/* !!Navbar anim */
+@keyframes slideInOut {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-container-list-item {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.nav-container-list-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0 0.5em;
+  border-radius: 1px;
+  margin: 0.2em 0.5em;
+}
+.nav-container-list-item a:not(.active):hover {
+  color: #2a9b59;
+}
+
+@media (min-width: 1281px) {
+  /* CSS */
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    max-height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    background-color: transparent;
+    padding: 1em;
+  }
+
+  .nav-container-list-item a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 2em;
+  }
+
+  .nav-container-list-item a:hover {
+    font-weight: 700;
+    color: #fff !important;
+  }
+
+  .nav-container-list-item a:not(.active)::after {
+    content: "";
+    position: absolute;
+    background-color: #2a9b59;
+    height: 2.5px;
+    width: 0;
+    left: 6px;
+    bottom: -8px;
+    transition: 0.8s;
+  }
+
+  .nav-container-list-item a:hover::after {
+    width: 90%;
+  }
+
+  .logo {
+    width: 200px;
+  }
+  ul {
+    animation: none;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .active {
+    color: #2a9b59 !important;
+    background-color: transparent;
+  }
+}

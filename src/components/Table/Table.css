@@ -1,0 +1,83 @@
+.standings-table {
+  width: 85%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0.2em auto;
+  text-align: start;
+  background-color: #fff;
+}
+
+table thead tr th {
+  padding: 0.3em;
+  font-size: 0.8rem;
+  color: #2a9b59;
+  border-bottom: 2px solid #f8f9fa;
+  text-align: center;
+}
+table tbody tr:hover {
+  background-color: #37383c;
+  color: #fff;
+}
+
+table tbody tr td {
+  padding: 0.1em;
+  text-align: center;
+}
+
+table tbody tr td img {
+  vertical-align: middle;
+}
+
+table tbody tr td a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+table tbody tr td a:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+  font-weight: 700;
+  border: none;
+}
+
+.standings-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+.widget-fixture {
+  margin-top: 2em;
+}
+
+.score {
+  background-color: #2a9b59;
+  padding: 0.2em 0.4em;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .standings-table {
+    width: 100%;
+    max-width: 200px;
+    max-width: none;
+  }
+  table tbody tr td,
+  table thead tr th {
+    text-align: start;
+    padding: 0.2em;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* CSS */
+  .standings-table {
+    width: 100%;
+    max-width: 1200px;
+  }
+}

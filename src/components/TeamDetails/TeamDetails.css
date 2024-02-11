@@ -1,0 +1,20 @@
+.players-container
+{
+ display:flex;
+ flex-wrap:wrap;
+ gap:2em;
+ border:2px solid red;
+}
+
+
+.player-card
+{
+    width: 100%;
+    max-width: 300px;
+    max-height: 350px;
+    background-image: url(../../assets/playerCardBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:10px solid blue;
+}
+
