@@ -1,0 +1,44 @@
+.page404{
+    background-image: url("../../assets/test1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.page404-container
+{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center; 
+    padding-top:5em;
+}
+
+.page404-logo
+{
+    width: 100%;
+    max-width: 800px;
+    margin:1em auto;
+    margin-bottom:0;
+}
+
+.page404-title
+{
+    color:#fff;
+    font-size:5rem;
+    margin-top:0;
+}
+
+.page404-btn
+{
+    color:#fff;
+    width: 20%;
+    margin:0 auto;
+}
+
+.page404-svg
+{
+    position: relative;
+    bottom:35%;
+    left:50%;
+}

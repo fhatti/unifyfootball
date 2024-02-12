@@ -15,7 +15,7 @@ import News from "./pages/News/News";
 import Standings from "./pages/Standings/Standings";
 import Contact from "./pages/Contact/Contact";
 import FixtureDetails from "./components/FixtureDetailed/FixtureDetailed";
-import Page404 from "./pages/404";
+import Page404 from "./pages/Page404/404";
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
       </Routes>
       <Footer/>
       </Layout>
+      
     </div>
   );
 }
