@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./404.css";
+import "./Page404.css";
 import Layout from "../../components/Layout/Layout";
 import Logo404 from "../../assets/404.png";
 import Referee from "../../assets/404svg.png";

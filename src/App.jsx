@@ -15,7 +15,7 @@ import News from "./pages/News/News";
 import Standings from "./pages/Standings/Standings";
 import Contact from "./pages/Contact/Contact";
 import FixtureDetails from "./components/FixtureDetailed/FixtureDetailed";
-import Page404 from "./pages/Page404/404";
+import Page404 from "./pages/Page404/Page404";
 
 function App() {
   return (
