@@ -34,11 +34,21 @@
     color:#fff;
     width: 20%;
     margin:0 auto;
+    font-size:1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.page404-btn:hover,
+.page404:focus
+{
+   color:#2ef4f3;
 }
 
 .page404-svg
 {
     position: relative;
     bottom:35%;
-    left:50%;
+    left:80%;
+    width: 50%;
 }
