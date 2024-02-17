@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import useFetch from "../../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
 import "./Results.css";
 
 function getDate() {
@@ -34,7 +35,7 @@ const Results = () => {
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>;
+   <p>error : {error}</p>
   }
 
   console.log(data);
