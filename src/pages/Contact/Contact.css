@@ -293,6 +293,31 @@ textarea.input {
   }
 }
 
+.success-message
+{
+  display:flex;
+  flex-direction: column;
+  width: 90%;
+  margin:0 auto;
+}
+
+.success-txt
+{
+  color:#fff;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.scs-l
+{
+  font-size: 1.2rem;
+}
+
+
+
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;
@@ -346,3 +371,4 @@ textarea.input {
     width: 95%;
   }
 }
+
