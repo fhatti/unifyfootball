@@ -8,14 +8,13 @@ import "./News.css";
 import Header from "../../components/Header/Header";
 import { Card } from "../../components/Card/Card";
 import newsData from "../../data/newsData";
-import FullNewsPage from "../../components/FullNews/FullNewsPage";
 import Layout from "../../components/Layout/Layout";
+import headerImg from "../../assets/news-page-header.avif"
 
 const News = () => {
   const headerProps = {
     title: "ȘTIRI",
-    imageUrl:
-      "https://s3-alpha-sig.figma.com/img/868e/01c3/58ed173bec8c7fb85cd75f8a64dec0b2?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gs2QnIIHTo9od2AqvWAUc1FhpIm-kelC9J9ORn3t9Uns52EdK0q5oG00P1RxuEKj6nOVsGDgFYMO9MEoJvu2gluWwYG0NOVylSBvei~Rw~LRD8Szdj3zUZn41huPOvlcCyyDPK9J1zFLc8txiC282kZDZ~Kze4GQn9ZnKjBxwYRgqdnDCZ1O2tK4aJvv2acfzpJ3dh2euAQzFeB6BBlueMrR5HcHEmthnXHj-Y3tXkyMLJ~tYsHVCt0W2nBUB6KsBOHgHBg8uqNW3TXJ9nJdguM3wD8WVjey87Q0pBEVtc7Mt-hzZ1hmkBcsf3XVW1AMcMWYJyS7SoJgWS82c9QoOA__",
+    imageUrl:[headerImg],
     subtitle: "",
     lowercase: true,
     shadow: true,

@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 import Header from "../../components/Header/Header";
+import headerImg from "../../assets/test-about-us.png"
 
 const About = () => {
   const headerProps = {
     title: "Despre noi",
-    imageUrl:
-      "https://s3-alpha-sig.figma.com/img/678d/8474/1aac7151346b1b7026812b4c37508d15?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OLsqwuDWRbiR3EZFs7l~zIJuObtRfordNr6uxwMi63mOOXRKWRetCDBuuSH~stclpbNFgbbr2tHnV0LlJpCOYoabfCCMDK0zW~WMNupdarGrgm3PGyrM9Rq2tPthnNOiB-itWfR0x8r8U2hezbDncn4VXoKTrbrk504LYmjDyk7LBF0gUIqU4qa9siHLIaBZ0D0F2PLLTzhxACPMBSdPlgasAfxLZFqqpN9XUg0VgdRgXGnwrk4rClHVQidIYiilz9XvzEc6xY-XkSDokSu2RBPv99pZyVkcy0QuFYzmQWfsY3xRicYoyf76ukma-6jmQsI4dRweQzCamfmLf~PuNA__",
+    imageUrl:[headerImg],
     subtitle: "",
     shadow: true,
   };
@@ -18,7 +18,7 @@ const About = () => {
         <p className="about-us-txt">
           Fotbalul este{" "}
           <span className="unify-forms">mai mult decât un sport</span>, are
-          puterea de a aduce oamenii împreună din toate categoriile de viață.
+          puterea de a aduce oamenii împreună din toate categoriile de viață. d
         </p>
         <p className="about-us-txt">
           Scopul nostru este să aducem împreună fani de fotbal din întreaga lume

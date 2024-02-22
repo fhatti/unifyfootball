@@ -1,8 +1,16 @@
+import image1 from "../assets/news/image1.jpg"
+import image2 from "../assets/news/image2.jpg"
+import image3 from "../assets/news/image3.jpg"
+import image4 from "../assets/news/image4.jpg"
+import image5 from "../assets/news/image5.jpg"
+import image6 from "../assets/news/image6.jpg"
+import image7 from "../assets/news/image7.jpg"
+
+
 const newsData = [
   {
     id: 1,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/403903715_122142888872019865_7260789288501401036_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=ETqe2smoV7YAX9JFJ2Y&_nc_ht=scontent-muc2-1.xx&oh=00_AfBtONjopWOF9K6pIfup-W82FKudDRtscrFbBv6X6XVPgw&oe=65BE486A",
+    imageUrl:[image1],
     imageAlt: "FOTO-ECHIPA-NATIONALA",
     type: "transfer",
     title: "Israel - România, ASTĂZI",
@@ -23,8 +31,7 @@ const newsData = [
   },
   {
     id: 2,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/392928010_122135512244019865_8346719004916055761_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Sn9pYk9fskwAX-Mlyqi&_nc_ht=scontent-muc2-1.xx&oh=00_AfDUm7tIKRUbBwpAfzmKKxzymtZc7qYWmPanHZbGaAU3aQ&oe=65BEE007",
+    imageUrl:[image2],
     imageAlt: "FOTO-IANIS-HAGI-IN-TRICOUL-NATIONALEI",
     type: "ANIVERSARE",
     title: "La mulți ani, IANIS HAGI!",
@@ -45,8 +52,7 @@ const newsData = [
   },
   {
     id: 3,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/393970343_122135309552019865_7805780684772887905_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3635dc&_nc_ohc=enAYqvwSjbgAX-mDneU&_nc_ht=scontent-muc2-1.xx&oh=00_AfCgom2KfZ6EBMO6sdbNbWq_nVKTTEyrSPjUo5NFqEhmvQ&oe=65BFF05C",
+    imageUrl:[image3],
     imageAlt: "FOTO-OVIDIU-HATEGAN",
     type: "record",
     title: "Un adevărat exemplu de dedicare!",
@@ -68,8 +74,7 @@ const newsData = [
   },
   {
     id: 4,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/382981124_122128935056019865_2151864946569550647_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=mUXOMVPgnGkAX-tuH5f&_nc_ht=scontent-muc2-1.xx&oh=00_AfAKx2L_9k7mBchAq7XaZ5ncw0sLiI9Ltozk36uLJQ8eig&oe=65BF66E1",
+    imageUrl:[image4],
     type: "zi de meci",
     imageAlt: "FOTO-AFIS-FCSB-VS-UCLUJ",
     title: "FCSB se întoarce pe Arena Națională pentru meciul cu U Cluj!",
@@ -91,8 +96,7 @@ const newsData = [
   },
   {
     id: 5,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/376243674_122118847178019865_6901734264729868127_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=HsXkkarAzzkAX8O3o9O&_nc_ht=scontent-muc2-1.xx&oh=00_AfA4TlDtIPqBrjDhehFTciMAHBOqaDwTMuwXPsyaom4JTw&oe=65BFD916",
+    imageUrl:[image5],
     type: "REMINDER",
     imageAlt: "FOTO-TROFEU-UCL",
     title: "7 zile ramase",
@@ -113,8 +117,7 @@ const newsData = [
   },
   {
     id: 6,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/378387063_122129134358019865_4946464066586557427_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3635dc&_nc_ohc=AtMkEPQCePcAX-lPYqE&_nc_ht=scontent-muc2-1.xx&oh=00_AfCpFqr4FyQNNbvHxP9yeY1tUg2_BZAMpwf2glJFI4ZNdw&oe=65B1889A",
+    imageUrl:[image6],
     type: "FINAL DE MECI",
     imageAlt: "FOTO-FCSB-vs-UCLUJ",
     title: "FCSB-U Cluj 2-2",
@@ -136,8 +139,7 @@ const newsData = [
   },
   {
     id: 7,
-    imageUrl:
-      "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/394250855_122135001272019865_4463474527336673519_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=0KkKyQ3sFUMAX-g6qZf&_nc_ht=scontent-muc2-1.xx&oh=00_AfCr8OfIMafutGZAlQIgyhuhLpTDF5UCsriS4dtx6-CC8w&oe=65B078F6",
+    imageUrl:[image7],
     type: "zi de meci",
     imageAlt: "FOTO-UTA-vs-RAPID",
     title:
