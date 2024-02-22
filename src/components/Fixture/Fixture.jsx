@@ -15,7 +15,7 @@ function getDate() {
 
 const Fixture = ({ numberOfFixturesToShow = 20 }) => {
   // change date parameters in fixtureUrl !!!
-  const fixtureUrl = `https://apiv2.allsportsapi.com/football/?met=Fixtures&leagueId=272&timezone=EET&from=${getDate()}&to=2024-2-10`;
+  const fixtureUrl = `https://apiv2.allsportsapi.com/football/?met=Fixtures&leagueId=272&timezone=EET&from=${getDate()}&to=${getDate()}`;
   const apiKey = import.meta.env.VITE_API_KEY;
   const { data, loading, error } = useFetch(fixtureUrl, apiKey);
 
