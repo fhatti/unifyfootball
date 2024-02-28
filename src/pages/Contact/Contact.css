@@ -307,16 +307,9 @@ textarea.input {
   font-weight: 500;
   width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding:1em;
 }
-
-
-.scs-l
-{
-  font-size: 1.2rem;
-}
-
-
 
 @media (max-width: 480px) {
   .container {
@@ -350,7 +343,7 @@ textarea.input {
   }
 
   .social-icons a {
-    width: 30px;
+    width: 50px;
     height: 30px;
     line-height: 30px;
   }
@@ -365,6 +358,7 @@ textarea.input {
 
   .btn {
     padding: 0.45rem 1.2rem;
+    align-self: center;
   }
 
   .form {

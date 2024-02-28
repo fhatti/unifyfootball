@@ -154,10 +154,10 @@
 
 @media (max-width: 481px) {
   .header-container-homepage {
-    background-image: url("../../assets/background-loading-mobile.png");
+    background-image: url("../../assets/bg-test.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: middle;
   }
 
   .header-title-homepage {
@@ -173,7 +173,7 @@
   }
 
   .homepage-main {
-    width: 95%;
+    width: 100%;
     display: flex;
   }
 
