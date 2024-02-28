@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaDiscord,
 } from "react-icons/fa";
+import { RotatingLines } from "react-loader-spinner";
 import Lottie from "lottie-react";
 import animationData from "../../assets/Animation - 1708611839942.json";
 import emailjs from "@emailjs/browser";
@@ -19,7 +20,8 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,12 +46,19 @@ const Contact = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setLoading(true);
       })
       .catch((error) => {
         console.log("Error sending email: ", error);
         setSuccess(false);
         setError(true);
+      })
+      .finally(() => {
+        setLoading(false);
       });
+
+      
+
   };
 
   useEffect(() => {
@@ -150,8 +159,7 @@ const Contact = () => {
               {success ? (
                 <div className="success-message">
                     <Lottie animationData={animationData}></Lottie>
-                  <p className="success-txt scs-l">Form submitted successfully!</p>
-                  <p className="success-txt scs-r">We will contact you shortly!</p>
+                  <p className="success-txt scs-l">Formularul a fost trimis cu succes!</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} autoComplete="off">
@@ -165,8 +173,8 @@ const Contact = () => {
                       required
                       onChange={(e) => setName(e.target.value)}
                     />
-                    <label htmlFor="">Username</label>
-                    <span>Username</span>
+                    <label htmlFor="">Nume</label>
+                    <span>Nume</span>
                   </div>
                   <div className="input-container">
                     <input
@@ -182,8 +190,8 @@ const Contact = () => {
                   </div>
                   <div className="input-container">
                     <input type="tel" name="phone" className="input" required />
-                    <label htmlFor="">Phone</label>
-                    <span>Phone</span>
+                    <label htmlFor="">Număr de telefon</label>
+                    <span>Număr de telefon</span>
                   </div>
                   <div className="input-container textarea">
                     <textarea
@@ -192,8 +200,8 @@ const Contact = () => {
                       className="input"
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <label htmlFor="">Message</label>
-                    <span>Message</span>
+                    <label htmlFor="">Mesaj</label>
+                    <span>Mesaj</span>
                   </div>
                   <input type="submit" value="Send" className="btn" />
                 </form>
