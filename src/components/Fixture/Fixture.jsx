@@ -3,6 +3,7 @@ import { RotatingLines } from "react-loader-spinner";
 import useFetch from "../../hooks/useFetch";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import leagueLogo from "../../assets/superliga-logo.png"
 import "./Fixture.css";
 
 function getDate() {
@@ -56,7 +57,7 @@ const Fixture = ({ numberOfFixturesToShow = 20 }) => {
               </div>
               <div className="match-league">
                 <img
-                  src="https://www.primaplay.ro/uploads/thumb/tags/346b2b8b0e480ff551870a0c29cf5e66.png"
+                  src={leagueLogo}
                   alt="superliga-logo"
                   className="superliga-logo"
                 />
@@ -125,6 +126,7 @@ const Fixture = ({ numberOfFixturesToShow = 20 }) => {
             {meci.event_status === "Finished" ? (
               <button className="see-more-btn" s>
                 <Link
+                 target={"_blank"} 
                   to={{
                     pathname: `/standings/${meci.event_key}`,
                   }}

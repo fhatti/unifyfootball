@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
+import Layout from "../Layout/Layout";
+import Fixture from "../Fixture/Fixture";
 import { useParams } from "react-router-dom";
 
 function FixtureDetailed() {
@@ -22,13 +24,14 @@ function FixtureDetailed() {
     return <p>Error: {error.message}</p>;
   }
 
-  const detailedFixture = data.result[0];
+  const fixture = data.result[0];
 
   return (
-    <div>
-      <p>{detailedFixture.event_home_team}</p>
-      <h3>Goalscorers</h3>
-    </div>
+    <>
+    <Layout>
+      {fixture.event_final_result}
+    </Layout>
+    </>
   );
 }
 

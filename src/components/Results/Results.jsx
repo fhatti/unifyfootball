@@ -51,7 +51,7 @@ const Results = () => {
         </tr>
       </thead>
       <tbody>
-        {dataForResults.map((result, index) => (
+        {dataForResults ? dataForResults.map((result, index) => (
           <tr key={index}>
             <td className="fs-lv1">{result.event_date}</td>
             <td>{result.event_home_team}</td>
@@ -61,7 +61,7 @@ const Results = () => {
             <td>{result.event_away_team}</td>
             <td className="fs-lv1">{result.league_season}</td>
           </tr>
-        ))}
+        )) : (<p>Niciun Rezultat</p>)}
       </tbody>
     </table>
   );
