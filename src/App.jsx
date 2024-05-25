@@ -7,7 +7,6 @@ import Layout from "./components/Layout/Layout";
 import Footer from "./components/Footer/Footer";
 import FullNewsPage from "./components/FullNews/FullNewsPage";
 import TeamDetails from "./components/TeamDetails/TeamDetails";
-import FixtureDetailed from "./components/FixtureDetailed/FixtureDetailed";
 // PAGES //
 import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
